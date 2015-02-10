@@ -40,6 +40,10 @@ STATICFILES_DIRS = (
     STATIC_PATH,
 )
 
+# Information about media content
+MEDIA_URL = '/media/' # The url to fetch media content using the browser. For instance:  http://127.0.0.1:8000/media/
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media') # Absolute path to the media directory
+
 ALLOWED_HOSTS = []
 
 

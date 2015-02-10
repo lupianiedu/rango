@@ -1,15 +1,18 @@
 <!DOCTYPE html>
+<!-- we need to inform Django’s template system that we will be using static media -->
+{% load staticfiles %}
 <html>
 
-    <head lang="en">
-        <meta charset="UTF-8">
+    <head lang='en'>
+        <meta charset='UTF-8'>
         <title>Rango</title>
     </head>
 
     <body>
         <h1>Rango says...</h1>
         hello world! <strong>{{ boldmessage }}</strong><br />
-        <a href="/rango/about/">About</a><br />
+        <a href='/rango/about/'>About</a><br />
+        <img src='{% static 'images/cowboy.jpeg' %}' alt='Picture of Cowboy' width='20%' height='20%'/>
     </body>
 
 </html>

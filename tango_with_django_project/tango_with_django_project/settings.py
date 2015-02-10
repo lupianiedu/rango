@@ -23,6 +23,7 @@ SECRET_KEY = '9kje%o9z7611ymd*tuou!nm+dyl7xdk5&hc4!)^i0qy9uai0a5'
 DEBUG = True
 
 TEMPLATE_DEBUG = True
+
 # This variable sets the absolute location of the templates folder
 TEMPLATE_PATH = os.path.join(BASE_DIR, 'templates')
 TEMPLATE_DIRS = [
@@ -31,6 +32,13 @@ TEMPLATE_DIRS = [
     # Don't forget to use absolute paths, not relative paths.
     TEMPLATE_PATH,
 ]
+
+# This variable contains the absolute location of the static content
+STATIC_PATH = os.path.join(BASE_DIR, 'static')
+STATIC_URL = '/static/'
+STATICFILES_DIRS = (
+    STATIC_PATH,
+)
 
 ALLOWED_HOSTS = []
 
@@ -89,4 +97,4 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.7/howto/static-files/
 
-STATIC_URL = '/static/'
+

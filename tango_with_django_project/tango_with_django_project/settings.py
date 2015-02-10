@@ -23,6 +23,14 @@ SECRET_KEY = '9kje%o9z7611ymd*tuou!nm+dyl7xdk5&hc4!)^i0qy9uai0a5'
 DEBUG = True
 
 TEMPLATE_DEBUG = True
+# This variable sets the absolute location of the templates folder
+TEMPLATE_PATH = os.path.join(BASE_DIR, 'templates')
+TEMPLATE_DIRS = [
+    # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
+    # Always use forward slashes, even on Windows.
+    # Don't forget to use absolute paths, not relative paths.
+    TEMPLATE_PATH,
+]
 
 ALLOWED_HOSTS = []
 
